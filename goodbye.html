@@ -6,8 +6,13 @@
     <title>Hello to Goodbye</title>
     <script>
         function goodbye() {
-            document.querySelector('h1').innerHTML = "Goodbye" ;
-            document.querySelector('h2').innerHTML = "nice to meet you" ;
+            if (document.querySelector('h1').innerHTML === "Hello Guys") { 
+                document.querySelector('h1').innerHTML = "Goodbye" ;
+                document.querySelector('h2').innerHTML = "Nice to meet you" ;
+            } else {
+                document.querySelector('h1').innerHTML = "Hello Guys" ;
+                document.querySelector('h2').innerHTML = "Whatsup" ;
+            } 
         }
         
     </script>
