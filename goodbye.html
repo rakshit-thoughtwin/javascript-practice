@@ -6,15 +6,16 @@
     <title>Hello to Goodbye</title>
     <script>
         function goodbye() {
-            if (document.querySelector('h1').innerHTML === "Hello Guys") { 
-                document.querySelector('h1').innerHTML = "Goodbye" ;
-                document.querySelector('h2').innerHTML = "Nice to meet you" ;
+            let heading1 = document.querySelector('h1')   //let could be changed later
+            const heading2 = document.querySelector('h2') //const sets variable for permanent
+            if (heading1.innerHTML === "Hello Guys") { 
+                heading1.innerHTML = "Goodbye" ;
+                heading2.innerHTML = "Nice to meet you" ;
             } else {
-                document.querySelector('h1').innerHTML = "Hello Guys" ;
-                document.querySelector('h2').innerHTML = "Whatsup" ;
+                heading1.innerHTML = "Hello Guys" ;
+                heading2.innerHTML = "Whatsup" ;
             } 
         }
-        
     </script>
 </head>
 <body>
